@@ -1,0 +1,89 @@
+# zexi 0.4.0
+opensearch_CreateDomain:
+  languages:
+    Kotlin:
+      versions:
+        - sdk_version: 1
+          github: kotlin/services/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.kotlin.create_domain.main
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.java2.create_domain.main
+  services:
+    opensearch: {CreateDomain}
+opensearch_DeleteDomain:
+  languages:
+    Kotlin:
+      versions:
+        - sdk_version: 1
+          github: kotlin/services/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.kotlin.delete_domain.main
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.java2.delete_domain.main
+  services:
+    opensearch: {DeleteDomain}
+opensearch_ListDomainNames:
+  languages:
+    Kotlin:
+      versions:
+        - sdk_version: 1
+          github: kotlin/services/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.kotlin.list_domains.main
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.java2.list_domains.main
+  services:
+    opensearch: {ListDomainNames}
+opensearch_UpdateDomainConfig:
+  languages:
+    Kotlin:
+      versions:
+        - sdk_version: 1
+          github: kotlin/services/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.kotlin.update_domain.main
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/opensearch
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - opensearch.java2.update_domain.main
+  services:
+    opensearch: {UpdateDomainConfig}
