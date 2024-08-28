@@ -1,0 +1,14 @@
+{
+  "name": "example-javascriptv3-sqs",
+  "version": "1.0.0",
+  "author": "Corey Pyle <corepyle@amazon.com>",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "integration-test": "vitest run **/*.integration.test.js"
+  },
+  "dependencies": {
+    "@aws-sdk-examples/libs": "^1.0.0",
+    "@aws-sdk/client-sqs": "^3.332.0"
+  }
+}
