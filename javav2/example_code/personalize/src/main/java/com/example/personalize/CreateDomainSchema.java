@@ -1,0 +1,86 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: Apache-2.0
+
+package com.example.personalize;
+
+// snippet-start:[personalize.java2.create_domain_schema.import]
+
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.personalize.model.CreateSchemaRequest;
+import software.amazon.awssdk.services.personalize.PersonalizeClient;
+import software.amazon.awssdk.services.personalize.model.PersonalizeException;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+// snippet-end:[personalize.java2.create_domain_schema.import]
+
+public class CreateDomainSchema {
+
+    public static void main(String[] args) {
+
+        final String USAGE = """
+                Usage:
+                    CreateSchema <name, domain, schemaLocation>
+
+                Where:
+                   name - The name for the schema.
+                   domain - The domain of the dataset's domain dataset group.
+                   schemaLocation - the location of the schema JSON file.
+
+                """;
+
+        if (args.length != 3) {
+            System.out.println(USAGE);
+            System.exit(1);
+        }
+
+        String schemaName = args[0];
+        String domain = args[1];
+        String filePath = args[2];
+
+        Region region = Region.US_WEST_2;
+
+        PersonalizeClient personalizeClient = PersonalizeClient.builder()
+                .region(region)
+                .build();
+
+        createDomainSchema(personalizeClient, schemaName, domain, filePath);
+
+        personalizeClient.close();
+
+    }
+
+    // snippet-start:[personalize.java2.create_domain_schema.main]
+    public static String createDomainSchema(PersonalizeClient personalizeClient, String schemaName, String domain,
+            String filePath) {
+
+        String schema = null;
+        try {
+            schema = new String(Files.readAllBytes(Paths.get(filePath)));
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            CreateSchemaRequest createSchemaRequest = CreateSchemaRequest.builder()
+                    .name(schemaName)
+                    .domain(domain)
+                    .schema(schema)
+                    .build();
+
+            String schemaArn = personalizeClient.createSchema(createSchemaRequest).schemaArn();
+
+            System.out.println("Schema arn: " + schemaArn);
+
+            return schemaArn;
+
+        } catch (PersonalizeException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+        return "";
+    }
+    // snippet-end:[personalize.java2.create_domain_schema.main]
+
+}
