@@ -1,0 +1,14 @@
+# zexi 0.4.0
+firehose_PutRecordBatch:
+  languages:
+    Rust:
+      versions:
+        - sdk_version: 1
+          github: rustv1/examples/firehose
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - firehose.rust.put_record_batch
+  services:
+    firehose: {PutRecordBatch}

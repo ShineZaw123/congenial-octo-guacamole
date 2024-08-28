@@ -1,0 +1,20 @@
+{
+  "name": "@aws-doc-sdk-examples/example-javascriptv3-medical-imaging",
+  "version": "1.0.0",
+  "author": "Steven Meyer <meyertst@amazon.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@aws-doc-sdk-examples/lib": "^1.0.0",
+    "@aws-sdk/client-cloudformation": "3.540.0",
+    "@aws-sdk/client-medical-imaging": "^3.391.0",
+    "@aws-sdk/client-sts": "^3.540.0"
+  },
+  "scripts": {
+    "test": "vitest run **/*.unit.test.js",
+    "integration-test": "vitest run **/*.integration.test.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vitest": "^1.5.0"
+  }
+}

@@ -1,0 +1,27 @@
+# zexi 0.4.0
+ecr_DescribeRepositories:
+  languages:
+    Rust:
+      versions:
+        - sdk_version: 1
+          github: rustv1/examples/ecr
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - ecr.rust.describe-repos
+  services:
+    ecr: {DescribeRepositories}
+ecr_ListImages:
+  languages:
+    Rust:
+      versions:
+        - sdk_version: 1
+          github: rustv1/examples/ecr
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - ecr.rust.list-images
+  services:
+    ecr: {ListImages}

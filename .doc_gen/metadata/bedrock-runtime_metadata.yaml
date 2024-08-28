@@ -1,0 +1,805 @@
+# zexi 0.4.0
+bedrock-runtime_Hello:
+  title: Hello &BR;
+  title_abbrev: Hello &BR;
+  synopsis: get started using &BR;.
+  category: Hello
+  languages:
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description:
+              snippet_tags:
+                - gov2.bedrock-runtime.Hello
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description:
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/hello.js
+  services:
+    bedrock-runtime: {InvokeModel}
+
+# Amazon Titan Text Embeddings G1
+bedrock-runtime_TitanTextEmbeddingsG1_InvokeModel:
+  title: Invoke Amazon Titan Text Embeddings G1 on &BR;
+  title_abbrev: "Amazon Titan Text Embeddings G1"
+  synopsis_list:
+    - Get started creating your first embedding.
+    - Create embeddings and process all response fields.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Create your first embedding with Amazon Titan Text Embeddings G1.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_TitanTextEmbeddingsG1_Quickstart
+            - description: Invoke Amazon Titan Text Embeddings G1 and process all response fields.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_TitanTextEmbeddingsG1_AdditionalFields
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Create your first embedding with Amazon Titan Text Embeddings G1.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModel_TitanTextEmbeddingsG1_Quickstart
+            - description: Invoke Amazon Titan Text Embeddings G1 and process all response fields.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModel_TitanTextEmbeddingsG1_AdditionalFields
+  services:
+    bedrock-runtime: {InvokeModel}
+
+# Amazon Titan Text Embeddings V2
+bedrock-runtime_TitanTextEmbeddingsV2_InvokeModel:
+  title: Invoke Amazon Titan Text Embeddings V2 on &BR;
+  title_abbrev: "Amazon Titan Text Embeddings V2"
+  synopsis_list:
+    - Get started creating your first embedding.
+    - Create embeddings configuring the number of dimensions and normalization.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Create your first embedding with Titan Text Embeddings V2.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_TitanTextEmbeddingsV2_Quickstart
+            - description: Invoke Titan Text Embeddings V2 configuring the number of dimensions and normalization.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_TitanTextEmbeddingsV2_AdditionalFields
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Create your first embedding with Titan Text Embeddings V2.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModel_TitanTextEmbeddingsG1_Quickstart
+            - description: Invoke Titan Text Embeddings V2 configuring the number of dimensions and normalization.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModel_TitanTextEmbeddingsG1_AdditionalFields
+  services:
+    bedrock-runtime: {InvokeModel}
+
+# Amazon Titan Text G1
+bedrock-runtime_TitanTextG1_InvokeModel:
+  title: Invoke Amazon Titan Text G1 on &BR;
+  title_abbrev: "Amazon Titan Text G1"
+  synopsis_list:
+    - Get started sending your first prompt to Amazon Titan Text and printing the response.
+    - Add a system prompt and additional inference parameters to influence how the model responds.
+    - Enable chat-like, multi-turn conversations, using a conversation history.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Amazon Titan Text.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_TitanTextG1_Quickstart
+            - description: Invoke Titan Text with a system prompt and additional inference parameters.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_TitanTextG1_SingleMessage
+            - description: Create a chat-like experience with Titan Text, using a conversation history.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_TitanTextG1_Conversation
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Amazon Titan Text.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/amazon_titan/titan_text.js
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Amazon Titan Text.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.TitanTextG1
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Amazon Titan Text.
+              snippet_tags:
+                - gov2.bedrock-runtime.InvokeTitanText
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeAmazonTitanImageGeneratorForImageGeneration:
+  title: Invoke Amazon Titan Image G1 on &BR; to generate an image
+  title_abbrev: 'Amazon Titan: Image generation'
+  synopsis: invoke Amazon Titan Image G1 on &BR; to generate an image.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Asynchronously invoke the Amazon Titan Image Generator G1 model to generate images.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_titan_image_async.main
+            - description: Invoke the Amazon Titan Image Generator G1 model to generate images.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_titan_image.main
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description: Invoke the Amazon Titan Image Generator G1 model to generate images.
+              snippet_tags:
+                - gov2.bedrock-runtime.InvokeTitanImage
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Amazon Titan Image Generator G1 model to generate images.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.service.invokeTitanImage
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Amazon Titan Image Generator G1 model to generate images.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeTitanImage
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          sdkguide:
+          excerpts:
+            - description: Asynchronously invoke the Amazon Titan Image Generator G1 foundation model to generate images.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.TitanImageGeneratorG1
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeStableDiffusionForImageGeneration:
+  title: Invoke Stability.ai Stable Diffusion XL  on &BR; to generate an image
+  title_abbrev: 'Stable Diffusion: Image generation'
+  synopsis: invoke Stability.ai Stable Diffusion XL  on &BR; to generate an image.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Asynchronously invoke the Stability.ai Stable Diffusion XL foundation model to generate images.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_stable_diffusion_async.main
+            - description: Invoke the Stability.ai Stable Diffusion XL foundation model to generate images.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_stable_diffusion.main
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Stability.ai Stable Diffusion XL foundation model to generate images.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeStableDiffusion
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Stability.ai Stable Diffusion XL foundation model to generate images.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.service.invokeStableDiffusion
+    SAP ABAP:
+      versions:
+        - sdk_version: 1
+          github: sap-abap/services/bdr
+          excerpts:
+            - description: Invoke the Stability.ai Stable Diffusion XL foundation model to generate images.
+              snippet_tags:
+                - bdr.abapv1.invokemodel_stable_diffusion
+            - description: Invoke the Stability.ai Stable Diffusion XL foundation model to generate images using L2 high level
+                client.
+              snippet_tags:
+                - bdr.abapv1.invokemodel_l2_stable_diffusion
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          sdkguide:
+          excerpts:
+            - description: Asynchronously invoke Stability.ai Stable Diffusion XL foundation model to generate images.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.StableDiffusionXL
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeMistral7B:
+  title: Invoke the Mistral 7B model on &BR; for text generation
+  title_abbrev: 'Mistral AI: Text generation with Mistral 7B Instruct'
+  synopsis: invoke the Mistral 7B model on &BR; for text generation.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Asynchronously invoke the Mistral 7B foundation model to generate text.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_mistral_7b_async.main
+            - description: Invoke the Mistral 7B foundation model to generate text.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_mistral_7b.main
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Mistral 7B foundation model to generate text.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/mistral_ai/mistral_7b.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Mistral 7B foundation model to generate text.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeMistral7B
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          sdkguide:
+          excerpts:
+            - description: Asynchronously invoke the Mistral 7B foundation model to generate text.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.Mistral7B
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeMixtral8x7B:
+  title: Invoke the Mixtral 8x7B model on &BR; for text generation
+  title_abbrev: 'Mistral AI: Text generation with Mixtral 8x7B Instruct'
+  synopsis: invoke the Mixtral 8x7B model on &BR; for text generation.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Asynchronously invoke the Mistral 8x7B foundation model to generate text.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_mixtral_8x7b_async.main
+            - description: Invoke the Mixtral 8x7B foundation model to generate text.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_mixtral_8x7b.main
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Mixtral 8x7B foundation model to generate text.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/mistral_ai/mixtral_8x7b.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Mixtral 8x7B foundation model to generate text.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeMixtral8x7B
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          sdkguide:
+          excerpts:
+            - description: Asynchronously invoke the Mixtral 8x7B foundation model to generate text.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.Mixtral8x7B
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeClaudeInstant:
+  title: Invoke the Anthropic Claude Instant model on &BR; for text generation
+  title_abbrev: 'Anthropic Claude Instant: Text generation'
+  synopsis: invoke the Anthropic Claude Instant model on &BR; for text generation.
+  category: Invoke model examples
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Anthropic Claude Instant foundation model to generate text.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/anthropic_claude/claude_instant_1.js
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeClaude2x:
+  title: Invoke Anthropic Claude 2.x on &BR; for text generation
+  title_abbrev: 'Anthropic Claude 2: Text generation'
+  synopsis: invoke the Anthropic Claude 2.x on &BR; for text generation.
+  category: Invoke model examples
+  languages:
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description: Invoke the Anthropic Claude 2 foundation model to generate text.
+              snippet_tags:
+                - gov2.bedrock-runtime.InvokeClaude
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke Claude 2.x using the synchronous client (scroll down for an async example).
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_claude.main
+            - description: Invoke Claude 2.x using the asynchronous client.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_claude_async.main
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Anthropic Claude 2 foundation model to generate text.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/anthropic_claude/claude_2.js
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Anthropic Claude 2 foundation model to generate text.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.service.invokeClaude
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Anthropic Claude 2 foundation model to generate text.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeAnthropicClaude
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          sdkguide:
+          excerpts:
+            - description: Asynchronously invoke the Anthropic Claude 2 foundation model to generate text.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.Claude
+    SAP ABAP:
+      versions:
+        - sdk_version: 1
+          github: sap-abap/services/bdr
+          excerpts:
+            - description: Invoke the Anthropic Claude 2 foundation model to generate text. This example uses features of
+                /US2/CL_JSON which might not be available on some NetWeaver versions.
+              snippet_tags:
+                - bdr.abapv1.invokemodel_claude_v2
+            - description: Invoke the Anthropic Claude 2 foundation model to generate text using L2 high level client.
+              snippet_tags:
+                - bdr.abapv1.invokemodel_l2_claude_v2
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_Claude3_Text:
+  title: Invoke Anthropic Claude 3 on &BR; to generate text
+  title_abbrev: 'Anthropic Claude 3: Text generation'
+  synopsis: invoke Anthropic Claude 3 on &BR; to generate text.
+  category: Invoke model examples
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke Anthropic Claude 3 to generate text.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeAnthropicClaude3Text
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke Anthropic Claude 3 to generate text.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/anthropic_claude/claude_3.js
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_Claude3_Multimodal:
+  title: Invoke Anthropic Claude 3 on &BR; with a multimodal prompt
+  title_abbrev: 'Anthropic Claude 3: Multimodal invocation'
+  synopsis: invoke Anthropic Claude 3 on &BR; with a multimodal prompt.
+  category: Invoke model examples
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke Anthropic Claude 3 with a multimodal prompt to analyze an image.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeAnthropicClaude3Multimodal
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeClaude2WithResponseStream:
+  title: Invoke Anthropic Claude 2.x on &BR; and process the response stream in real-time
+  title_abbrev: 'Anthropic Claude 2: Real-time response stream processing'
+  synopsis: invoke Anthropic Claude 2.x on &BR; and process the response stream in real-time.
+  category: Invoke model examples
+  languages:
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description: Invoke Anthropic Claude and process the response stream.
+              snippet_tags:
+                - gov2.bedrock-runtime.InvokeModelWithResponseStream
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Use Claude's Messages API to generate text, then process the response stream in real-time.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_claude2_with_response_stream_messages_api.main
+            - description: Use Claude's Text Completions API to generate text, then process the response stream in real-time.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_claude2_with_response_stream_text_api.main
+
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke Anthropic Claude and process the response stream.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/anthropic_claude/claude_3.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke Anthropic Claude and process the response stream.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModelWithResponseStream
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          sdkguide:
+          excerpts:
+            - description: Asynchronously invoke Anthropic Claude and process the response stream.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.ClaudeWithResponseStream
+  services:
+    bedrock-runtime: {InvokeModelWithResponseStream}
+
+bedrock-runtime_InvokeClaude3WithResponseStream:
+  title: Invoke Anthropic Claude 3 on &BR; and process the response stream in real-time
+  title_abbrev: 'Anthropic Claude 3: Real-time response stream processing'
+  synopsis: invoke Anthropic Claude 3 on &BR; and process the response stream in real-time.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke Claude 3 to generate text, then process the response stream in real-time.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_claude3_with_response_stream.main
+  services:
+    bedrock-runtime: {InvokeModelWithResponseStream}
+
+bedrock-runtime_InvokeJurassic2:
+  title: Invoke the AI21 Labs Jurassic-2 model on &BR; for text generation
+  title_abbrev: 'AI21 Labs Jurassic-2: Text generation'
+  synopsis: invoke the AI21 Labs Jurassic-2 model on &BR; for text generation.
+  category: Invoke model examples
+  languages:
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description: Invoke the AI21 Labs Jurassic-2 foundation model to generate text.
+              snippet_tags:
+                - gov2.bedrock-runtime.InvokeJurassic2
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Asynchronously invoke the AI21 Labs Jurassic-2 foundation model to generate text.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_jurassic-2_async.main
+            - description: Invoke the AI21 Labs Jurassic-2 foundation model to generate text.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_jurassic2.main
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the AI21 Labs Jurassic-2 foundation model to generate text.
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/models/ai21_labs_jurassic2/jurassic2.js
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the AI21 Labs Jurassic-2 foundation model to generate text.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.service.invokeJurassic2
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the AI21 Labs Jurassic-2 foundation model to generate text.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeAi21Jurassic2
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Asynchronously invoke the AI21 Labs Jurassic-2 foundation model.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.Jurassic2
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_Llama2_InvokeLlama:
+  title: Invoke Meta Llama 2 on &BR; using Meta's native request and response payloads
+  title_abbrev: 'Meta Llama 2: Text generation'
+  synopsis: get started sending prompts to Meta Llama 2 and printing the response.
+  category: Invoke model examples
+  languages:
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description: Invoke the Meta Llama 2 Chat foundation model to generate text.
+              snippet_tags:
+                - gov2.bedrock-runtime.InvokeLlama2
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 2.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_Llama2_Quickstart
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 2.
+              snippet_tags:
+                - javascript.v3.bedrock-runtime.InvokeModel_Llama2_Quickstart
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Meta Llama 2 Chat foundation model to generate text.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.service.invokeLlama2
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 2.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModel_Llama2_Quickstart
+    .NET:
+      versions:
+        - sdk_version: 3
+          github: dotnetv3/Bedrock-runtime
+          excerpts:
+            - description: Asynchronously invoke the Meta Llama 2 foundation model to generate text.
+              snippet_tags:
+                - BedrockRuntime.dotnetv3.BedrockRuntimeActions.InvokeModelAsync.Llama2
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_Llama2_InvokeModelWithResponseStream:
+  title: Invoke Meta Llama 2 on &BR; using Meta's native request and response payloads with a response stream
+  title_abbrev: 'Meta Llama 2: Text generation with response stream'
+  synopsis: get started sending prompts to Meta Llama 2 and printing the response stream in real-time.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModelWithResponseStream_Llama2_Quickstart
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - javascript.v3.bedrock-runtime.InvokeModelWithResponseStream_Llama2_Quickstart
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModelWithResponseStream_Llama2_Quickstart
+  services:
+    bedrock-runtime: {InvokeModelWithResponseStream}
+
+
+bedrock-runtime_Llama3_InvokeLlama:
+  title: Invoke Meta Llama 3 on &BR; using Meta's native request and response payloads
+  title_abbrev: 'Meta Llama 3: Text generation'
+  synopsis: get started sending prompts to Meta Llama 3 and printing the response.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModel_Llama3_Quickstart
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - javascript.v3.bedrock-runtime.InvokeModel_Llama3_Quickstart
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModel_Llama3_Quickstart
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_Llama3_InvokeModelWithResponseStream:
+  title: Invoke Meta Llama 3 on &BR; using Meta's native request and response payloads with a response stream
+  title_abbrev: 'Meta Llama 3: Text generation with response stream'
+  synopsis: get started sending prompts to Meta Llama 3 and printing the response stream in real-time.
+  category: Invoke model examples
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - bedrock-runtime.java2.InvokeModelWithResponseStream_Llama3_Quickstart
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - javascript.v3.bedrock-runtime.InvokeModelWithResponseStream_Llama3_Quickstart
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Send your first prompt to Meta Llama 3.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeModelWithResponseStream_Llama3_Quickstart
+  services:
+    bedrock-runtime: {InvokeModelWithResponseStream}
+
+bedrock-runtime_Scenario_InvokeModels:
+  title: Invoke various foundation models on &BR;
+  title_abbrev: Invoke multiple foundation models on &BR;
+  synopsis: prepare and send a prompt to a variety of large-language models (LLMs) on &BR;
+  category: Scenarios
+  languages:
+    Go:
+      versions:
+        - sdk_version: 2
+          github: gov2/bedrock-runtime
+          excerpts:
+            - description: Invoke multiple foundation models on &BR;.
+              snippet_tags:
+                - gov2.bedrock-runtime.Scenario_InvokeModels
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke multiple foundation models on &BR;.
+              snippet_tags:
+                - bedrock-runtime.java2.scenario_multiple_models.main
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: javascriptv3/example_code/bedrock-runtime
+          excerpts:
+            - description:
+              snippet_files:
+                - javascriptv3/example_code/bedrock-runtime/scenarios/cli_text_playground.js
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime/
+          excerpts:
+            - description: Invoke multiple LLMs on &BR;.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.basics.scenario
+  services:
+    bedrock-runtime: {InvokeModel, InvokeModelWithResponseStream}
