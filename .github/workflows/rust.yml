@@ -1,0 +1,48 @@
+name: Rust
+on:
+  push:
+    paths:
+      - "rustv1/**"
+    branches:
+      - main
+  pull_request:
+    paths:
+      - "rustv1/**"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    name: Lint Rust
+    runs-on: aws-doc-sdk-examples_ubuntu-latest_16-core
+    steps:
+      - name: setup
+        run: sudo apt-get update && sudo apt-get install -y libclang-dev
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: "1.70.0"
+          components: clippy, rustfmt
+      - uses: actions/checkout@v3
+      - name: Set Environment
+        run: >
+          export RUSTFLAGS="-D warnings" ;
+          export APP_ENVIRONMENT="test"
+      - name: Rust format
+        run: >
+          "$HOME/.cargo/bin/cargo" fmt --manifest-path rustv1/cross_service/Cargo.toml --all --check &&
+          "$HOME/.cargo/bin/cargo" fmt --manifest-path rustv1/examples/Cargo.toml --all --check &&
+          "$HOME/.cargo/bin/cargo" fmt --manifest-path rustv1/lambda/Cargo.toml --all --check &&
+          "$HOME/.cargo/bin/cargo" fmt --manifest-path rustv1/webassembly/Cargo.toml --all --check
+      - name: Rust lint
+        if: success() || failure()
+        run: >
+          "$HOME/.cargo/bin/cargo" clippy --manifest-path rustv1/cross_service/Cargo.toml --all &&
+          "$HOME/.cargo/bin/cargo" clippy --manifest-path rustv1/examples/Cargo.toml --all &&
+          "$HOME/.cargo/bin/cargo" clippy --manifest-path rustv1/lambda/Cargo.toml --all &&
+          "$HOME/.cargo/bin/cargo" clippy --manifest-path rustv1/webassembly/Cargo.toml --all
+      - name: Rust test
+        run: >
+          "$HOME/.cargo/bin/cargo" test --manifest-path rustv1/cross_service/Cargo.toml --all &&
+          "$HOME/.cargo/bin/cargo" test --manifest-path rustv1/examples/Cargo.toml --all &&
+          "$HOME/.cargo/bin/cargo" test --manifest-path rustv1/lambda/Cargo.toml --all &&
+          "$HOME/.cargo/bin/cargo" test --manifest-path rustv1/webassembly/Cargo.toml --all
